@@ -9,11 +9,11 @@ import common
 import _thread
 
 
-icon_fg=common.black
-icon_bg=common.green
+icon_fg=common.green
+icon_bg=common.black
 icon_tr="0xff"
-text_fg=common.black
-text_bg=common.green
+text_fg=common.green
+text_bg=common.black
 text_tr="0xff"
 
 icon_color="^c"+str(icon_fg)+"^^b"+str(icon_bg)+str(icon_tr)+"^"
@@ -43,19 +43,19 @@ def get_wifi_icon():
         cmd ="cat /sys/class/net/w*/flags"
         result = subprocess.run(cmd, shell=True, timeout=3, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         flags=str(result.stdout.decode('utf-8').replace('\n',''))
-        if(str(flags)=="0x1003") : icon="󰖪"
-        else : icon = "󰤬"
+        if(str(flags)=="0x1003") : icon=" 󰖪"
+        else : icon = " 󰤬"
         pass
       case 1:
         cmd = "echo $(awk '/^\s*w/ { print int($3 * 100 / 70)}' /proc/net/wireless)"
         result = subprocess.run(cmd, shell=True, timeout=3, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         wifi_signal=int(result.stdout.decode('utf-8').replace('\n',''))
-        if(wifi_signal>=80) : icon="󰤨"
-        elif(wifi_signal>=60) : icon="󰤥"
-        elif(wifi_signal>=40) : icon="󰤢"
-        elif(wifi_signal>=20) : icon="󰤟"
-        else : icon="󰤯"
-      case _: icon="󱛏"
+        if(wifi_signal>=80) : icon=" 󰤨"
+        elif(wifi_signal>=60) : icon=" 󰤥"
+        elif(wifi_signal>=40) : icon=" 󰤢"
+        elif(wifi_signal>=20) : icon=" 󰤟"
+        else : icon=" 󰤯"
+      case _: icon=" 󱛏"
     return icon
 
 

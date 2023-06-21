@@ -10,10 +10,10 @@ import common
 
 
 icon_fg=common.black
-icon_bg=common.green
+icon_bg=common.red
 icon_tr="0xff"
 text_fg=common.black
-text_bg=common.green
+text_bg=common.red
 text_tr="0xff"
 
 icon_color="^c"+str(icon_fg)+"^^b"+str(icon_bg)+str(icon_tr)+"^"
@@ -26,7 +26,7 @@ name=re.sub("\..*",'',filename)
 
 def update(loop=False,exec=True):
   while True :
-    icon="  "
+    icon=" ☯ " # 
     text=""
     txt="^s"+str(name)+"^"+str(icon_color)+str(icon)+str(text_color)+str(text)
     common.write_to_file(txt+"\n",str(name))
