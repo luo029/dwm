@@ -37,13 +37,7 @@ static const unsigned int snap            = 10;        /* 边缘依附宽度 */
 // 字体配置
 //=============================================================================
 static const char *fonts[]               = {
-<<<<<<< Updated upstream
-      //"monospace:size=15",
-			"Monaco:style=Regular:size=11",
-			"Symbols Nerd Font:style=2048-em:size=17",
-		  "Microsoft YaHei:size=11:style=Regular:antialias=true:autohint:true",
-			"JoyPixels:size=13:antialias=true:autohint=true"
-=======
+
  
  	"Symbols Nerd Font:size=19",
   "Source Code Pro:size=19",
@@ -57,7 +51,7 @@ static const char *fonts[]               = {
 	//"Microsoft YaHei:size=13",
 	//"JoyPixels:size=13:antialias=true:autohint=true",
   //"Source Han Sans CN:style=Medium:size=11"
->>>>>>> Stashed changes
+
 };
 
 
@@ -149,7 +143,7 @@ static const char scratchpadname[] = "scratchpad";
 //            ﮸  ﭮ 切  ﬐ // 增补图标
 //            
 //=============================================================================
-static const char *tags[] = { "", "", "", "", "", "","", "","","" };
+static const char *tags[] = { "󰼏", "󰼐", "󰼑", "󰼒", "󰼓", "󰼔","󰼕", "󰼖","󰼗","" };
 
 
 //=============================================================================
@@ -225,8 +219,8 @@ static const Layout overviewlayout = { "", overview };
 //-----------------------------------------------------------------------------
 static const Layout layouts[] = {
   //symbol     arrange function   
-    {"﬿",        tile},      /* 主次栈 */
-    {"﩯",     magicgrid},   /* 网格 */
+    {"",        tile},      /* 主次栈 */
+    {"",     magicgrid},   /* 网格 */
     {"TR",    tile_right},   /* 主次栈 主侧放在右侧*/
     {NULL,       NULL} //最后一个需要是NULL,NULL,cyclelayout,请勿更改
 };
@@ -235,8 +229,8 @@ static const Layout layouts[] = {
 //-----------------------------------------------------------------------------
 static const Layout layouts[] = {
 	/* symbol     arrange function, { nmaster, nstack, layout, master axis, stack axis, secondary stack axis } */
-	{ "﬿",          flextile,         { -1, -1, SPLIT_VERTICAL, TOP_TO_BOTTOM, TOP_TO_BOTTOM, 0, NULL } }, // default tile layout
-  { "﩯",        magicgrid,{0} },    /* 网格 */
+	{ "",          flextile,         { -1, -1, SPLIT_VERTICAL, TOP_TO_BOTTOM, TOP_TO_BOTTOM, 0, NULL } }, // default tile layout
+  { "",       magicgrid,{0} },    /* 网格 */
 	// { "><>",      NULL,             {0} },    /* no layout function means floating behavior */ // 已经被win+shift+f 替代，不用这个
 	// { "[M]",      flextile,         { -1, -1, NO_SPLIT, MONOCLE, MONOCLE, 0, NULL } }, // monocle
 	// { "|||",      flextile,         { -1, -1, SPLIT_VERTICAL, LEFT_TO_RIGHT, TOP_TO_BOTTOM, 0, NULL } }, // columns (col) layout //其实就是tile
