@@ -37,11 +37,27 @@ static const unsigned int snap            = 10;        /* 边缘依附宽度 */
 // 字体配置
 //=============================================================================
 static const char *fonts[]               = {
+<<<<<<< Updated upstream
       //"monospace:size=15",
 			"Monaco:style=Regular:size=11",
 			"Symbols Nerd Font:style=2048-em:size=17",
 		  "Microsoft YaHei:size=11:style=Regular:antialias=true:autohint:true",
 			"JoyPixels:size=13:antialias=true:autohint=true"
+=======
+ 
+ 	"Symbols Nerd Font:size=19",
+  "Source Code Pro:size=19",
+  "Source Han Sans CN :size=19"
+
+  //"SauceCodePro Nerd Font Mono:size=16"
+ // "Source Code Pro:size=13", 
+  //"monospace:size=15",
+	//"Monaco:style=Regular:size=11",
+//	 "Symbols Nerd Font:size=20",
+	//"Microsoft YaHei:size=13",
+	//"JoyPixels:size=13:antialias=true:autohint=true",
+  //"Source Han Sans CN:style=Medium:size=11"
+>>>>>>> Stashed changes
 };
 
 
