@@ -114,11 +114,11 @@ def get_vol_content():
     vol=int(vol_text)
     vol_text=vol_text
     if vol==0 : 
-      vol_icon="婢"
+      vol_icon="󰸈"
       vol_text="00"
     # elif vol<10 : vol_icon="奔" 
     # elif vol<50 : vol_icon="奔"
-    else : vol_icon="墳"
+    else : vol_icon=""
   return str(vol_icon)+str(vol_text)+"%"+" "+GetBluetoothBatteryByPactl()
   # return str(vol_icon)+str(vol_text)+"%"+" "+GetBluetoothBattery()
   # return str(vol_icon)+str(vol_text)+"%"
@@ -147,7 +147,7 @@ def notify(string='') :
 
   cmd=""
   if volumuted=="" :
-    cmd="notify-send -r 9527 '婢  mute'  "
+    cmd="notify-send -r 9527 'ﱝ  mute'  "
   else :
     cmd="notify-send -r 9527 -h int:value:"+str(int(vol_text))+" -h string:hlcolor:#dddddd "+'"'+str(vol_icon)+" Volume"+'"' ;
   os.system(cmd)

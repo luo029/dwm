@@ -34,7 +34,7 @@ def get_music_title():
 
 def update(loop=False,exec=True):
   while True :
-    icon="🎵" # 󰎆
+    icon=" 󰌳 " # 󰎆
     text=get_music_title()
     txt="^s"+str(name)+"^"+str(icon_color)+str(icon)+str(text_color)+str(text)
     common.write_to_file(txt+"\n",str(name))

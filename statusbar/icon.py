@@ -26,7 +26,7 @@ name=re.sub("\..*",'',filename)
 
 def update(loop=False,exec=True):
   while True :
-    icon="  "
+    icon="  "
     text=""
     txt="^s"+str(name)+"^"+str(icon_color)+str(icon)+str(text_color)+str(text)
     common.write_to_file(txt+"\n",str(name))

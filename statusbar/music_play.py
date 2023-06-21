@@ -33,7 +33,7 @@ def geticon():
   # print(play_status)
   if play_status=="Paused" : icon="  "
   elif play_status=="Playing" : icon=" 󰏤 "
-  else : icon="  "
+  else : icon="  "
   # print(icon)
   return icon
 

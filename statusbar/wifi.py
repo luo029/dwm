@@ -43,7 +43,7 @@ def get_wifi_icon():
         cmd ="cat /sys/class/net/w*/flags"
         result = subprocess.run(cmd, shell=True, timeout=3, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         flags=str(result.stdout.decode('utf-8').replace('\n',''))
-        if(str(flags)=="0x1003") : icon="睊"
+        if(str(flags)=="0x1003") : icon="󰖪"
         else : icon = "󰤬"
         pass
       case 1:
@@ -104,7 +104,7 @@ def click(string='') :
       os.system("nm-connection-editor")
       pass
     case 'R':
-      os.system("alacritty -t nmtui --class floatingTerminal -e nmtui ")
+      os.system("st -t nmtui --class floatingTerminal -e nmtui ")
     case 'U':
       pass
     case 'D':
