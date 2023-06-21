@@ -11,10 +11,10 @@ import common
 music_program=common.MUSIC_PROGRAM
 
 icon_fg=common.black
-icon_bg=common.blue
+icon_bg=common.red
 icon_tr="0xff"
 text_fg=common.blue
-text_bg=common.black
+text_bg=common.red
 text_tr="0xff"
 
 icon_color="^c"+str(icon_fg)+"^^b"+str(icon_bg)+str(icon_tr)+"^"

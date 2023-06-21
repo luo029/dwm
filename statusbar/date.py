@@ -10,10 +10,10 @@ import common
 import _thread
 
 icon_fg=common.black
-icon_bg=common.blue
+icon_bg=common.red
 icon_tr="0xff"
 text_fg=common.black
-text_bg=common.blue
+text_bg=common.red
 text_tr="0xff"
 
 icon_color="^c"+str(icon_fg)+"^^b"+str(icon_bg)+str(icon_tr)+"^"
