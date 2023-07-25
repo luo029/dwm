@@ -17,7 +17,7 @@ cron &
 blueman-manager & # bluetooth manager
 copyq &           # copy software
 
-picom --experimental-backends &
+# picom --experimental-backends &
 
 pkill -f statusbar.py
 python3 ~/my_desktop/dwm/statusbar/statusbar.py cron &
